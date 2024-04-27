@@ -1,0 +1,1617 @@
+{
+  "name": "SameSuite",
+  "url": "https://github.com/LIJI32/SameSuite",
+  "tests": [
+    {
+      "name": "apu/channel_1/channel_1_align",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_align.asm",
+      "rom": "apu/channel_1/channel_1_align.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_align.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_align_cpu",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_align_cpu.asm",
+      "rom": "apu/channel_1/channel_1_align_cpu.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_align_cpu.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_delay.asm",
+      "rom": "apu/channel_1/channel_1_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_duty",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_duty.asm",
+      "rom": "apu/channel_1/channel_1_duty.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_duty.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_duty_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_duty_delay.asm",
+      "rom": "apu/channel_1/channel_1_duty_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_duty_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_extra_length_clocking-cgb0B",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_extra_length_clocking-cgb0B.asm",
+      "rom": "apu/channel_1/channel_1_extra_length_clocking-cgb0B.gb",
+      "models": ["cgb0", "cgbB"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_freq_change",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_freq_change.asm",
+      "rom": "apu/channel_1/channel_1_freq_change.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_freq_change.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_freq_change_timing-cgb0BC",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_freq_change_timing-cgb0BC.asm",
+      "rom": "apu/channel_1/channel_1_freq_change_timing-cgb0BC.gb",
+      "models": ["cgb0", "cgbB", "cgbC"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_freq_change_timing-cgbDE",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_freq_change_timing-cgbDE.asm",
+      "rom": "apu/channel_1/channel_1_freq_change_timing-cgbDE.gb",
+      "models": ["cgbD", "cgbE"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_freq_change_timing-cgbDE.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_nrx2_glitch",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_nrx2_glitch.asm",
+      "rom": "apu/channel_1/channel_1_nrx2_glitch.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_nrx2_glitch.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_nrx2_speed_change",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_nrx2_speed_change.asm",
+      "rom": "apu/channel_1/channel_1_nrx2_speed_change.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_nrx2_speed_change.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_restart",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_restart.asm",
+      "rom": "apu/channel_1/channel_1_restart.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_restart.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_restart_nrx2_glitch",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_restart_nrx2_glitch.asm",
+      "rom": "apu/channel_1/channel_1_restart_nrx2_glitch.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_restart_nrx2_glitch.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_stop_div",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_stop_div.asm",
+      "rom": "apu/channel_1/channel_1_stop_div.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_stop_div.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_stop_restart",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_stop_restart.asm",
+      "rom": "apu/channel_1/channel_1_stop_restart.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_stop_restart.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_sweep",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_sweep.asm",
+      "rom": "apu/channel_1/channel_1_sweep.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_sweep.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_sweep_restart",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_sweep_restart.asm",
+      "rom": "apu/channel_1/channel_1_sweep_restart.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_sweep_restart.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_sweep_restart_2",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_sweep_restart_2.asm",
+      "rom": "apu/channel_1/channel_1_sweep_restart_2.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_sweep_restart_2.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_volume",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_volume.asm",
+      "rom": "apu/channel_1/channel_1_volume.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_volume.png"
+      }
+    },
+    {
+      "name": "apu/channel_1/channel_1_volume_div",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_1/channel_1_volume_div.asm",
+      "rom": "apu/channel_1/channel_1_volume_div.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_1/channel_1_volume_div.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_align",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_align.asm",
+      "rom": "apu/channel_2/channel_2_align.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_align.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_align_cpu",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_align_cpu.asm",
+      "rom": "apu/channel_2/channel_2_align_cpu.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_align_cpu.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_delay.asm",
+      "rom": "apu/channel_2/channel_2_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_duty",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_duty.asm",
+      "rom": "apu/channel_2/channel_2_duty.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_duty.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_duty_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_duty_delay.asm",
+      "rom": "apu/channel_2/channel_2_duty_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_duty_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_extra_length_clocking-cgb0B",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_extra_length_clocking-cgb0B.asm",
+      "rom": "apu/channel_2/channel_2_extra_length_clocking-cgb0B.gb",
+      "models": ["cgb0", "cgbB"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_freq_change",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_freq_change.asm",
+      "rom": "apu/channel_2/channel_2_freq_change.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_freq_change.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_nrx2_glitch",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_nrx2_glitch.asm",
+      "rom": "apu/channel_2/channel_2_nrx2_glitch.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_nrx2_glitch.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_nrx2_speed_change",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_nrx2_speed_change.asm",
+      "rom": "apu/channel_2/channel_2_nrx2_speed_change.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_nrx2_speed_change.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_restart",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_restart.asm",
+      "rom": "apu/channel_2/channel_2_restart.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_restart.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_restart_nrx2_glitch",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_restart_nrx2_glitch.asm",
+      "rom": "apu/channel_2/channel_2_restart_nrx2_glitch.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_restart_nrx2_glitch.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_stop_div",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_stop_div.asm",
+      "rom": "apu/channel_2/channel_2_stop_div.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_stop_div.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_stop_restart",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_stop_restart.asm",
+      "rom": "apu/channel_2/channel_2_stop_restart.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_stop_restart.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_volume",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_volume.asm",
+      "rom": "apu/channel_2/channel_2_volume.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_volume.png"
+      }
+    },
+    {
+      "name": "apu/channel_2/channel_2_volume_div",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_2/channel_2_volume_div.asm",
+      "rom": "apu/channel_2/channel_2_volume_div.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_2/channel_2_volume_div.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_and_glitch",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_and_glitch.asm",
+      "rom": "apu/channel_3/channel_3_and_glitch.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_and_glitch.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_delay.asm",
+      "rom": "apu/channel_3/channel_3_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_extra_length_clocking-cgb0",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_extra_length_clocking-cgb0.asm",
+      "rom": "apu/channel_3/channel_3_extra_length_clocking-cgb0.gb",
+      "models": ["cgb0"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_extra_length_clocking-cgbB",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_extra_length_clocking-cgbB.asm",
+      "rom": "apu/channel_3/channel_3_extra_length_clocking-cgbB.gb",
+      "models": ["cgbB"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_first_sample",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_first_sample.asm",
+      "rom": "apu/channel_3/channel_3_first_sample.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_first_sample.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_freq_change_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_freq_change_delay.asm",
+      "rom": "apu/channel_3/channel_3_freq_change_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_freq_change_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_restart_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_restart_delay.asm",
+      "rom": "apu/channel_3/channel_3_restart_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_restart_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_restart_during_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_restart_during_delay.asm",
+      "rom": "apu/channel_3/channel_3_restart_during_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_restart_during_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_restart_stop_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_restart_stop_delay.asm",
+      "rom": "apu/channel_3/channel_3_restart_stop_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_restart_stop_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_shift_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_shift_delay.asm",
+      "rom": "apu/channel_3/channel_3_shift_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_shift_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_shift_skip_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_shift_skip_delay.asm",
+      "rom": "apu/channel_3/channel_3_shift_skip_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_shift_skip_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_stop_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_stop_delay.asm",
+      "rom": "apu/channel_3/channel_3_stop_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_stop_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_stop_div",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_stop_div.asm",
+      "rom": "apu/channel_3/channel_3_stop_div.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_stop_div.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_wave_ram_dac_on_rw",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_wave_ram_dac_on_rw.asm",
+      "rom": "apu/channel_3/channel_3_wave_ram_dac_on_rw.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_wave_ram_locked_write",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_wave_ram_locked_write.asm",
+      "rom": "apu/channel_3/channel_3_wave_ram_locked_write.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_wave_ram_locked_write.png"
+      }
+    },
+    {
+      "name": "apu/channel_3/channel_3_wave_ram_sync",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_3/channel_3_wave_ram_sync.asm",
+      "rom": "apu/channel_3/channel_3_wave_ram_sync.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_3/channel_3_wave_ram_sync.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_align",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_align.asm",
+      "rom": "apu/channel_4/channel_4_align.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_align.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_delay",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_delay.asm",
+      "rom": "apu/channel_4/channel_4_delay.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_delay.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_equivalent_frequencies",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_equivalent_frequencies.asm",
+      "rom": "apu/channel_4/channel_4_equivalent_frequencies.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_equivalent_frequencies.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_extra_length_clocking-cgb0B",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_extra_length_clocking-cgb0B.asm",
+      "rom": "apu/channel_4/channel_4_extra_length_clocking-cgb0B.gb",
+      "models": ["cgb0", "cgbB"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_freq_change",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_freq_change.asm",
+      "rom": "apu/channel_4/channel_4_freq_change.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_freq_change.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_frequency_alignment",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_frequency_alignment.asm",
+      "rom": "apu/channel_4/channel_4_frequency_alignment.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_frequency_alignment.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_lfsr",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_lfsr.asm",
+      "rom": "apu/channel_4/channel_4_lfsr.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_lfsr.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_lfsr15",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_lfsr15.asm",
+      "rom": "apu/channel_4/channel_4_lfsr15.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_lfsr15.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_lfsr_15_7",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_lfsr_15_7.asm",
+      "rom": "apu/channel_4/channel_4_lfsr_15_7.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_lfsr_15_7.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_lfsr_7_15",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_lfsr_7_15.asm",
+      "rom": "apu/channel_4/channel_4_lfsr_7_15.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_lfsr_7_15.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_lfsr_restart",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_lfsr_restart.asm",
+      "rom": "apu/channel_4/channel_4_lfsr_restart.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_lfsr_restart.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_lfsr_restart_fast",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_lfsr_restart_fast.asm",
+      "rom": "apu/channel_4/channel_4_lfsr_restart_fast.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_lfsr_restart_fast.png"
+      }
+    },
+    {
+      "name": "apu/channel_4/channel_4_volume_div",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/channel_4/channel_4_volume_div.asm",
+      "rom": "apu/channel_4/channel_4_volume_div.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/channel_4/channel_4_volume_div.png"
+      }
+    },
+    {
+      "name": "apu/div_trigger_volume_10",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/div_trigger_volume_10.asm",
+      "rom": "apu/div_trigger_volume_10.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/div_trigger_volume_10.png"
+      }
+    },
+    {
+      "name": "apu/div_write_trigger",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/div_write_trigger.asm",
+      "rom": "apu/div_write_trigger.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/div_write_trigger.png"
+      }
+    },
+    {
+      "name": "apu/div_write_trigger_10",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/div_write_trigger_10.asm",
+      "rom": "apu/div_write_trigger_10.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/div_write_trigger_10.png"
+      }
+    },
+    {
+      "name": "apu/div_write_trigger_volume",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/div_write_trigger_volume.asm",
+      "rom": "apu/div_write_trigger_volume.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/div_write_trigger_volume.png"
+      }
+    },
+    {
+      "name": "apu/div_write_trigger_volume_10",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/apu/div_write_trigger_volume_10.asm",
+      "rom": "apu/div_write_trigger_volume_10.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "apu/div_write_trigger_volume_10.png"
+      }
+    },
+    {
+      "name": "dma/gbc_dma_cont",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/dma/gbc_dma_cont.asm",
+      "rom": "dma/gbc_dma_cont.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "dma/gbc_dma_cont.png"
+      }
+    },
+    {
+      "name": "dma/gdma_addr_mask",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/dma/gdma_addr_mask.asm",
+      "rom": "dma/gdma_addr_mask.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "dma/gdma_addr_mask.png"
+      }
+    },
+    {
+      "name": "dma/hdma_lcd_off",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/dma/hdma_lcd_off.asm",
+      "rom": "dma/hdma_lcd_off.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "dma/hdma_lcd_off.png"
+      }
+    },
+    {
+      "name": "dma/hdma_mode0",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/dma/hdma_mode0.asm",
+      "rom": "dma/hdma_mode0.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "dma/hdma_mode0.png"
+      }
+    },
+    {
+      "name": "interrupt/ei_delay_halt",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/interrupt/ei_delay_halt.asm",
+      "rom": "interrupt/ei_delay_halt.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": "interrupt/ei_delay_halt.dmg.png",
+          "cgb": "interrupt/ei_delay_halt.cgb.png"
+        }
+      }
+    },
+    {
+      "name": "ppu/blocking_bgpi_increase",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/ppu/blocking_bgpi_increase.asm",
+      "rom": "ppu/blocking_bgpi_increase.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "ppu/blocking_bgpi_increase.png"
+      }
+    },
+    {
+      "name": "sgb/command_mlt_req",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/sgb/command_mlt_req.asm",
+      "rom": "sgb/command_mlt_req.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "sgb/command_mlt_req_1_incrementing",
+      "source": "https://github.com/LIJI32/SameSuite/blob/master/sgb/command_mlt_req_1_incrementing.asm",
+      "rom": "sgb/command_mlt_req_1_incrementing.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    }
+  ]
+}

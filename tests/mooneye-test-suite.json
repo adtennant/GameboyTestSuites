@@ -1,0 +1,2330 @@
+{
+  "name": "mooneye-test-suite",
+  "url": "https://github.com/Gekkio/mooneye-test-suite",
+  "tests": [
+    {
+      "name": "acceptance/add_sp_e_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/add_sp_e_timing.s",
+      "rom": "acceptance/add_sp_e_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/add_sp_e_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/bits/mem_oam",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/bits/mem_oam.s",
+      "rom": "acceptance/bits/mem_oam.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/bits/mem_oam.png"
+      }
+    },
+    {
+      "name": "acceptance/bits/reg_f",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/bits/reg_f.s",
+      "rom": "acceptance/bits/reg_f.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/bits/reg_f.png"
+      }
+    },
+    {
+      "name": "acceptance/bits/unused_hwio-GS",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/bits/unused_hwio-GS.s",
+      "rom": "acceptance/bits/unused_hwio-GS.gb",
+      "models": ["dmg", "mgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/bits/unused_hwio-GS.png"
+      }
+    },
+    {
+      "name": "acceptance/boot_div-S",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_div-S.s",
+      "rom": "acceptance/boot_div-S.gb",
+      "models": ["sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "acceptance/boot_div-dmg0",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_div-dmg0.s",
+      "rom": "acceptance/boot_div-dmg0.gb",
+      "models": ["dmg0"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "acceptance/boot_div-dmgABCmgb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_div-dmgABCmgb.s",
+      "rom": "acceptance/boot_div-dmgABCmgb.gb",
+      "models": ["dmgA", "dmgB", "dmgC", "mgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/boot_div-dmgABCmgb.png"
+      }
+    },
+    {
+      "name": "acceptance/boot_div2-S",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_div2-S.s",
+      "rom": "acceptance/boot_div2-S.gb",
+      "models": ["sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "acceptance/boot_hwio-S",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_hwio-S.s",
+      "rom": "acceptance/boot_hwio-S.gb",
+      "models": ["sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "acceptance/boot_hwio-dmg0",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_hwio-dmg0.s",
+      "rom": "acceptance/boot_hwio-dmg0.gb",
+      "models": ["dmg0"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "acceptance/boot_hwio-dmgABCmgb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_hwio-dmgABCmgb.s",
+      "rom": "acceptance/boot_hwio-dmgABCmgb.gb",
+      "models": ["dmgA", "dmgB", "dmgC", "mgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/boot_hwio-dmgABCmgb.png"
+      }
+    },
+    {
+      "name": "acceptance/boot_regs-dmg0",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_regs-dmg0.s",
+      "rom": "acceptance/boot_regs-dmg0.gb",
+      "models": ["dmg0"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "acceptance/boot_regs-dmgABC",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_regs-dmgABC.s",
+      "rom": "acceptance/boot_regs-dmgABC.gb",
+      "models": ["dmgA", "dmgB", "dmgC"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/boot_regs-dmgABC.png"
+      }
+    },
+    {
+      "name": "acceptance/boot_regs-mgb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_regs-mgb.s",
+      "rom": "acceptance/boot_regs-mgb.gb",
+      "models": ["mgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/boot_regs-mgb.png"
+      }
+    },
+    {
+      "name": "acceptance/boot_regs-sgb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_regs-sgb.s",
+      "rom": "acceptance/boot_regs-sgb.gb",
+      "models": ["sgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/boot_regs-sgb.png"
+      }
+    },
+    {
+      "name": "acceptance/boot_regs-sgb2",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/boot_regs-sgb2.s",
+      "rom": "acceptance/boot_regs-sgb2.gb",
+      "models": ["sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/boot_regs-sgb2.png"
+      }
+    },
+    {
+      "name": "acceptance/call_cc_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/call_cc_timing.s",
+      "rom": "acceptance/call_cc_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/call_cc_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/call_cc_timing2",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/call_cc_timing2.s",
+      "rom": "acceptance/call_cc_timing2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/call_cc_timing2.png"
+      }
+    },
+    {
+      "name": "acceptance/call_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/call_timing.s",
+      "rom": "acceptance/call_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/call_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/call_timing2",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/call_timing2.s",
+      "rom": "acceptance/call_timing2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/call_timing2.png"
+      }
+    },
+    {
+      "name": "acceptance/di_timing-GS",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/di_timing-GS.s",
+      "rom": "acceptance/di_timing-GS.gb",
+      "models": ["dmg", "mgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/di_timing-GS.png"
+      }
+    },
+    {
+      "name": "acceptance/div_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/div_timing.s",
+      "rom": "acceptance/div_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/div_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/ei_sequence",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ei_sequence.s",
+      "rom": "acceptance/ei_sequence.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ei_sequence.png"
+      }
+    },
+    {
+      "name": "acceptance/ei_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ei_timing.s",
+      "rom": "acceptance/ei_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ei_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/halt_ime0_ei",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/halt_ime0_ei.s",
+      "rom": "acceptance/halt_ime0_ei.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/halt_ime0_ei.png"
+      }
+    },
+    {
+      "name": "acceptance/halt_ime0_nointr_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/halt_ime0_nointr_timing.s",
+      "rom": "acceptance/halt_ime0_nointr_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/halt_ime0_nointr_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/halt_ime1_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/halt_ime1_timing.s",
+      "rom": "acceptance/halt_ime1_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/halt_ime1_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/halt_ime1_timing2-GS",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/halt_ime1_timing2-GS.s",
+      "rom": "acceptance/halt_ime1_timing2-GS.gb",
+      "models": ["dmg", "mgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/halt_ime1_timing2-GS.png"
+      }
+    },
+    {
+      "name": "acceptance/if_ie_registers",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/if_ie_registers.s",
+      "rom": "acceptance/if_ie_registers.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/if_ie_registers.png"
+      }
+    },
+    {
+      "name": "acceptance/instr/daa",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/instr/daa.s",
+      "rom": "acceptance/instr/daa.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/instr/daa.png"
+      }
+    },
+    {
+      "name": "acceptance/interrupts/ie_push",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/interrupts/ie_push.s",
+      "rom": "acceptance/interrupts/ie_push.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/interrupts/ie_push.png"
+      }
+    },
+    {
+      "name": "acceptance/intr_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/intr_timing.s",
+      "rom": "acceptance/intr_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/intr_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/jp_cc_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/jp_cc_timing.s",
+      "rom": "acceptance/jp_cc_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/jp_cc_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/jp_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/jp_timing.s",
+      "rom": "acceptance/jp_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/jp_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/ld_hl_sp_e_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ld_hl_sp_e_timing.s",
+      "rom": "acceptance/ld_hl_sp_e_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ld_hl_sp_e_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/oam_dma/basic",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/oam_dma/basic.s",
+      "rom": "acceptance/oam_dma/basic.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/oam_dma/basic.png"
+      }
+    },
+    {
+      "name": "acceptance/oam_dma/reg_read",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/oam_dma/reg_read.s",
+      "rom": "acceptance/oam_dma/reg_read.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/oam_dma/reg_read.png"
+      }
+    },
+    {
+      "name": "acceptance/oam_dma/sources-GS",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/oam_dma/sources-GS.s",
+      "rom": "acceptance/oam_dma/sources-GS.gb",
+      "models": ["dmg", "mgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/oam_dma/sources-GS.png"
+      }
+    },
+    {
+      "name": "acceptance/oam_dma_restart",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/oam_dma_restart.s",
+      "rom": "acceptance/oam_dma_restart.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/oam_dma_restart.png"
+      }
+    },
+    {
+      "name": "acceptance/oam_dma_start",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/oam_dma_start.s",
+      "rom": "acceptance/oam_dma_start.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/oam_dma_start.png"
+      }
+    },
+    {
+      "name": "acceptance/oam_dma_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/oam_dma_timing.s",
+      "rom": "acceptance/oam_dma_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/oam_dma_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/pop_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/pop_timing.s",
+      "rom": "acceptance/pop_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/pop_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/hblank_ly_scx_timing-GS",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/hblank_ly_scx_timing-GS.s",
+      "rom": "acceptance/ppu/hblank_ly_scx_timing-GS.gb",
+      "models": ["dmg", "mgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/hblank_ly_scx_timing-GS.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/intr_1_2_timing-GS",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/intr_1_2_timing-GS.s",
+      "rom": "acceptance/ppu/intr_1_2_timing-GS.gb",
+      "models": ["dmg", "mgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/intr_1_2_timing-GS.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/intr_2_0_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/intr_2_0_timing.s",
+      "rom": "acceptance/ppu/intr_2_0_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/intr_2_0_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/intr_2_mode0_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/intr_2_mode0_timing.s",
+      "rom": "acceptance/ppu/intr_2_mode0_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/intr_2_mode0_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/intr_2_mode0_timing_sprites",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/intr_2_mode0_timing_sprites.s",
+      "rom": "acceptance/ppu/intr_2_mode0_timing_sprites.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/intr_2_mode0_timing_sprites.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/intr_2_mode3_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/intr_2_mode3_timing.s",
+      "rom": "acceptance/ppu/intr_2_mode3_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/intr_2_mode3_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/intr_2_oam_ok_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/intr_2_oam_ok_timing.s",
+      "rom": "acceptance/ppu/intr_2_oam_ok_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/intr_2_oam_ok_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/lcdon_timing-GS",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/lcdon_timing-GS.s",
+      "rom": "acceptance/ppu/lcdon_timing-GS.gb",
+      "models": ["dmg", "mgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/lcdon_timing-GS.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/lcdon_write_timing-GS",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/lcdon_write_timing-GS.s",
+      "rom": "acceptance/ppu/lcdon_write_timing-GS.gb",
+      "models": ["dmg", "mgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/lcdon_write_timing-GS.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/stat_irq_blocking",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/stat_irq_blocking.s",
+      "rom": "acceptance/ppu/stat_irq_blocking.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/stat_irq_blocking.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/stat_lyc_onoff",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/stat_lyc_onoff.s",
+      "rom": "acceptance/ppu/stat_lyc_onoff.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/stat_lyc_onoff.png"
+      }
+    },
+    {
+      "name": "acceptance/ppu/vblank_stat_intr-GS",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ppu/vblank_stat_intr-GS.s",
+      "rom": "acceptance/ppu/vblank_stat_intr-GS.gb",
+      "models": ["dmg", "mgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ppu/vblank_stat_intr-GS.png"
+      }
+    },
+    {
+      "name": "acceptance/push_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/push_timing.s",
+      "rom": "acceptance/push_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/push_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/rapid_di_ei",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/rapid_di_ei.s",
+      "rom": "acceptance/rapid_di_ei.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/rapid_di_ei.png"
+      }
+    },
+    {
+      "name": "acceptance/ret_cc_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ret_cc_timing.s",
+      "rom": "acceptance/ret_cc_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ret_cc_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/ret_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/ret_timing.s",
+      "rom": "acceptance/ret_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/ret_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/reti_intr_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/reti_intr_timing.s",
+      "rom": "acceptance/reti_intr_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/reti_intr_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/reti_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/reti_timing.s",
+      "rom": "acceptance/reti_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/reti_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/rst_timing",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/rst_timing.s",
+      "rom": "acceptance/rst_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/rst_timing.png"
+      }
+    },
+    {
+      "name": "acceptance/serial/boot_sclk_align-dmgABCmgb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/serial/boot_sclk_align-dmgABCmgb.s",
+      "rom": "acceptance/serial/boot_sclk_align-dmgABCmgb.gb",
+      "models": ["dmgA", "dmgB", "dmgC", "mgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/serial/boot_sclk_align-dmgABCmgb.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/div_write",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/div_write.s",
+      "rom": "acceptance/timer/div_write.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/div_write.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/rapid_toggle",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/rapid_toggle.s",
+      "rom": "acceptance/timer/rapid_toggle.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/rapid_toggle.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tim00",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tim00.s",
+      "rom": "acceptance/timer/tim00.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tim00.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tim00_div_trigger",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tim00_div_trigger.s",
+      "rom": "acceptance/timer/tim00_div_trigger.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tim00_div_trigger.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tim01",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tim01.s",
+      "rom": "acceptance/timer/tim01.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tim01.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tim01_div_trigger",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tim01_div_trigger.s",
+      "rom": "acceptance/timer/tim01_div_trigger.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tim01_div_trigger.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tim10",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tim10.s",
+      "rom": "acceptance/timer/tim10.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tim10.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tim10_div_trigger",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tim10_div_trigger.s",
+      "rom": "acceptance/timer/tim10_div_trigger.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tim10_div_trigger.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tim11",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tim11.s",
+      "rom": "acceptance/timer/tim11.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tim11.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tim11_div_trigger",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tim11_div_trigger.s",
+      "rom": "acceptance/timer/tim11_div_trigger.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tim11_div_trigger.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tima_reload",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tima_reload.s",
+      "rom": "acceptance/timer/tima_reload.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tima_reload.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tima_write_reloading",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tima_write_reloading.s",
+      "rom": "acceptance/timer/tima_write_reloading.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tima_write_reloading.png"
+      }
+    },
+    {
+      "name": "acceptance/timer/tma_write_reloading",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/acceptance/timer/tma_write_reloading.s",
+      "rom": "acceptance/timer/tma_write_reloading.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "acceptance/timer/tma_write_reloading.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/bits_bank1",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/bits_bank1.s",
+      "rom": "emulator-only/mbc1/bits_bank1.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/bits_bank1.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/bits_bank2",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/bits_bank2.s",
+      "rom": "emulator-only/mbc1/bits_bank2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/bits_bank2.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/bits_mode",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/bits_mode.s",
+      "rom": "emulator-only/mbc1/bits_mode.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/bits_mode.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/bits_ramg",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/bits_ramg.s",
+      "rom": "emulator-only/mbc1/bits_ramg.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/bits_ramg.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/multicart_rom_8Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/multicart_rom_8Mb.s",
+      "rom": "emulator-only/mbc1/multicart_rom_8Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/multicart_rom_8Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/ram_256kb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/ram_256kb.s",
+      "rom": "emulator-only/mbc1/ram_256kb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/ram_256kb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/ram_64kb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/ram_64kb.s",
+      "rom": "emulator-only/mbc1/ram_64kb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/ram_64kb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/rom_16Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/rom_16Mb.s",
+      "rom": "emulator-only/mbc1/rom_16Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/rom_16Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/rom_1Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/rom_1Mb.s",
+      "rom": "emulator-only/mbc1/rom_1Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/rom_1Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/rom_2Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/rom_2Mb.s",
+      "rom": "emulator-only/mbc1/rom_2Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/rom_2Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/rom_4Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/rom_4Mb.s",
+      "rom": "emulator-only/mbc1/rom_4Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/rom_4Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/rom_512kb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/rom_512kb.s",
+      "rom": "emulator-only/mbc1/rom_512kb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/rom_512kb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc1/rom_8Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc1/rom_8Mb.s",
+      "rom": "emulator-only/mbc1/rom_8Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc1/rom_8Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc2/bits_ramg",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc2/bits_ramg.s",
+      "rom": "emulator-only/mbc2/bits_ramg.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc2/bits_ramg.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc2/bits_romb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc2/bits_romb.s",
+      "rom": "emulator-only/mbc2/bits_romb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc2/bits_romb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc2/bits_unused",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc2/bits_unused.s",
+      "rom": "emulator-only/mbc2/bits_unused.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc2/bits_unused.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc2/ram",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc2/ram.s",
+      "rom": "emulator-only/mbc2/ram.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc2/ram.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc2/rom_1Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc2/rom_1Mb.s",
+      "rom": "emulator-only/mbc2/rom_1Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc2/rom_1Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc2/rom_2Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc2/rom_2Mb.s",
+      "rom": "emulator-only/mbc2/rom_2Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc2/rom_2Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc2/rom_512kb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc2/rom_512kb.s",
+      "rom": "emulator-only/mbc2/rom_512kb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc2/rom_512kb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc5/rom_16Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc5/rom_16Mb.s",
+      "rom": "emulator-only/mbc5/rom_16Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc5/rom_16Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc5/rom_1Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc5/rom_1Mb.s",
+      "rom": "emulator-only/mbc5/rom_1Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc5/rom_1Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc5/rom_2Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc5/rom_2Mb.s",
+      "rom": "emulator-only/mbc5/rom_2Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc5/rom_2Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc5/rom_32Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc5/rom_32Mb.s",
+      "rom": "emulator-only/mbc5/rom_32Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc5/rom_32Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc5/rom_4Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc5/rom_4Mb.s",
+      "rom": "emulator-only/mbc5/rom_4Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc5/rom_4Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc5/rom_512kb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc5/rom_512kb.s",
+      "rom": "emulator-only/mbc5/rom_512kb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc5/rom_512kb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc5/rom_64Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc5/rom_64Mb.s",
+      "rom": "emulator-only/mbc5/rom_64Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc5/rom_64Mb.png"
+      }
+    },
+    {
+      "name": "emulator-only/mbc5/rom_8Mb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/emulator-only/mbc5/rom_8Mb.s",
+      "rom": "emulator-only/mbc5/rom_8Mb.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "emulator-only/mbc5/rom_8Mb.png"
+      }
+    },
+    {
+      "name": "madness/mgb_oam_dma_halt_sprites",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/madness/mgb_oam_dma_halt_sprites.s",
+      "rom": "madness/mgb_oam_dma_halt_sprites.gb",
+      "models": ["mgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "madness/mgb_oam_dma_halt_sprites.png"
+      }
+    },
+    {
+      "name": "manual-only/sprite_priority",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/manual-only/sprite_priority.s",
+      "rom": "manual-only/sprite_priority.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "manual-only/sprite_priority.png"
+      }
+    },
+    {
+      "name": "misc/bits/unused_hwio-C",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/misc/bits/unused_hwio-C.s",
+      "rom": "misc/bits/unused_hwio-C.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "misc/bits/unused_hwio-C.png"
+      }
+    },
+    {
+      "name": "misc/boot_div-cgb0",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/misc/boot_div-cgb0.s",
+      "rom": "misc/boot_div-cgb0.gb",
+      "models": ["cgb0"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "misc/boot_div-cgbABCDE",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/misc/boot_div-cgbABCDE.s",
+      "rom": "misc/boot_div-cgbABCDE.gb",
+      "models": ["cgbA", "cgbB", "cgbC", "cgbD", "cgbE"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "misc/boot_div-cgbABCDE.png"
+      }
+    },
+    {
+      "name": "misc/boot_hwio-C",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/misc/boot_hwio-C.s",
+      "rom": "misc/boot_hwio-C.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "misc/boot_hwio-C.png"
+      }
+    },
+    {
+      "name": "misc/boot_regs-cgb",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/misc/boot_regs-cgb.s",
+      "rom": "misc/boot_regs-cgb.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "misc/boot_regs-cgb.png"
+      }
+    },
+    {
+      "name": "misc/ppu/vblank_stat_intr-C",
+      "source": "https://github.com/Gekkio/mooneye-test-suite/blob/main/misc/ppu/vblank_stat_intr-C.s",
+      "rom": "misc/ppu/vblank_stat_intr-C.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "misc/ppu/vblank_stat_intr-C.png"
+      }
+    }
+  ]
+}

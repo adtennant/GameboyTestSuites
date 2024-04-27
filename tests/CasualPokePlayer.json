@@ -1,0 +1,30 @@
+{
+  "name": "CasualPokePlayer",
+  "url": "https://github.com/CasualPokePlayer/test-roms",
+  "tests": [
+    {
+      "name": "ramg-mbc3-test",
+      "source": "https://github.com/CasualPokePlayer/test-roms/tree/ramg-mbc3-test",
+      "rom": "ramg-mbc3-test.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "ramg-mbc3-test.png"
+      }
+    },
+    {
+      "name": "rtc-invalid-banks-test",
+      "source": "https://github.com/CasualPokePlayer/test-roms/tree/rtc-invalid-banks-test",
+      "rom": "rtc-invalid-banks-test.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "rtc-invalid-banks-test.png"
+      }
+    }
+  ]
+}

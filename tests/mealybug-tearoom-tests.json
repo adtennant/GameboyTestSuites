@@ -1,0 +1,871 @@
+{
+  "name": "mealybug-tearoom-tests",
+  "url": "https://github.com/mattcurrie/mealybug-tearoom-tests",
+  "tests": [
+    {
+      "name": "dma/hdma_during_halt-C",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/dma/hdma_during_halt-C.asm",
+      "rom": "dma/hdma_during_halt-C.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "dma/hdma_timing-C",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/dma/hdma_timing-C.asm",
+      "rom": "dma/hdma_timing-C.gb",
+      "models": ["cgb"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    },
+    {
+      "name": "mbc/mbc3_rtc",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/mbc/mbc3_rtc.asm",
+      "rom": "mbc/mbc3_rtc.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": "mbc/mbc3_rtc.png"
+      }
+    },
+    {
+      "name": "ppu/m2_win_en_toggle",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m2_win_en_toggle.asm",
+      "rom": "ppu/m2_win_en_toggle.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m2_win_en_toggle.dmg.png"],
+          "cgb": [
+            "ppu/m2_win_en_toggle.cgbC.png",
+            "ppu/m2_win_en_toggle.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_bgp_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_bgp_change.asm",
+      "rom": "ppu/m3_bgp_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_bgp_change.dmg.png"],
+          "cgb": ["ppu/m3_bgp_change.cgbC.png", "ppu/m3_bgp_change.cgbD.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_bgp_change_sprites",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_bgp_change_sprites.asm",
+      "rom": "ppu/m3_bgp_change_sprites.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_bgp_change_sprites.dmg.png"],
+          "cgb": [
+            "ppu/m3_bgp_change_sprites.cgbC.png",
+            "ppu/m3_bgp_change_sprites.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_bg_en_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_bg_en_change.asm",
+      "rom": "ppu/m3_lcdc_bg_en_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_bg_en_change.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_bg_en_change.cgbC.png",
+            "ppu/m3_lcdc_bg_en_change.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_bg_en_change2",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_bg_en_change2.asm",
+      "rom": "ppu/m3_lcdc_bg_en_change2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_bg_en_change2.cgbC.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_bg_map_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_bg_map_change.asm",
+      "rom": "ppu/m3_lcdc_bg_map_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_bg_map_change.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_bg_map_change.cgbC.png",
+            "ppu/m3_lcdc_bg_map_change.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_bg_map_change2",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_bg_map_change2.asm",
+      "rom": "ppu/m3_lcdc_bg_map_change2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_bg_map_change2.cgbC.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_obj_en_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_obj_en_change.asm",
+      "rom": "ppu/m3_lcdc_obj_en_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_obj_en_change.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_obj_en_change.cgbC.png",
+            "ppu/m3_lcdc_obj_en_change.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_obj_en_change_variant",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_obj_en_change_variant.asm",
+      "rom": "ppu/m3_lcdc_obj_en_change_variant.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_obj_en_change_variant.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_obj_en_change_variant.cgbC.png",
+            "ppu/m3_lcdc_obj_en_change_variant.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_obj_size_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_obj_size_change.asm",
+      "rom": "ppu/m3_lcdc_obj_size_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_obj_size_change.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_obj_size_change.cgbC.png",
+            "ppu/m3_lcdc_obj_size_change.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_obj_size_change_scx",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_obj_size_change_scx.asm",
+      "rom": "ppu/m3_lcdc_obj_size_change_scx.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_obj_size_change_scx.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_obj_size_change_scx.cgbC.png",
+            "ppu/m3_lcdc_obj_size_change_scx.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_tile_sel_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_tile_sel_change.asm",
+      "rom": "ppu/m3_lcdc_tile_sel_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_tile_sel_change.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_tile_sel_change.cgbC.png",
+            "ppu/m3_lcdc_tile_sel_change.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_tile_sel_change2",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_tile_sel_change2.asm",
+      "rom": "ppu/m3_lcdc_tile_sel_change2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_tile_sel_change2.cgbC.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_tile_sel_win_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_tile_sel_win_change.asm",
+      "rom": "ppu/m3_lcdc_tile_sel_win_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_tile_sel_win_change.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_tile_sel_win_change.cgbC.png",
+            "ppu/m3_lcdc_tile_sel_win_change.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_tile_sel_win_change2",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_tile_sel_win_change2.asm",
+      "rom": "ppu/m3_lcdc_tile_sel_win_change2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_tile_sel_win_change2.cgbC.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_win_en_change_multiple",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_win_en_change_multiple.asm",
+      "rom": "ppu/m3_lcdc_win_en_change_multiple.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_win_en_change_multiple.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_win_en_change_multiple.cgbC.png",
+            "ppu/m3_lcdc_win_en_change_multiple.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_win_en_change_multiple_wx",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_win_en_change_multiple_wx.asm",
+      "rom": "ppu/m3_lcdc_win_en_change_multiple_wx.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_win_en_change_multiple_wx.dmg.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_win_map_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_win_map_change.asm",
+      "rom": "ppu/m3_lcdc_win_map_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_win_map_change.dmg.png"],
+          "cgb": [
+            "ppu/m3_lcdc_win_map_change.cgbC.png",
+            "ppu/m3_lcdc_win_map_change.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_lcdc_win_map_change2",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_lcdc_win_map_change2.asm",
+      "rom": "ppu/m3_lcdc_win_map_change2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_lcdc_win_map_change2.cgbC.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_obp0_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_obp0_change.asm",
+      "rom": "ppu/m3_obp0_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_obp0_change.dmg.png"],
+          "cgb": ["ppu/m3_obp0_change.cgbC.png", "ppu/m3_obp0_change.cgbD.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_scx_high_5_bits",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_scx_high_5_bits.asm",
+      "rom": "ppu/m3_scx_high_5_bits.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_scx_high_5_bits.dmg.png"],
+          "cgb": [
+            "ppu/m3_scx_high_5_bits.cgbC.png",
+            "ppu/m3_scx_high_5_bits.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_scx_high_5_bits_change2",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_scx_high_5_bits_change2.asm",
+      "rom": "ppu/m3_scx_high_5_bits_change2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_scx_high_5_bits_change2.cgbC.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_scx_low_3_bits",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_scx_low_3_bits.asm",
+      "rom": "ppu/m3_scx_low_3_bits.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_scx_low_3_bits.dmg.png"],
+          "cgb": [
+            "ppu/m3_scx_low_3_bits.cgbC.png",
+            "ppu/m3_scx_low_3_bits.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_scy_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_scy_change.asm",
+      "rom": "ppu/m3_scy_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_scy_change.dmg.png"],
+          "cgb": ["ppu/m3_scy_change.cgbC.png", "ppu/m3_scy_change.cgbD.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_scy_change2",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_scy_change2.asm",
+      "rom": "ppu/m3_scy_change2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_scy_change2.cgbC.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_window_timing",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_window_timing.asm",
+      "rom": "ppu/m3_window_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_window_timing.dmg.png"],
+          "cgb": [
+            "ppu/m3_window_timing.cgbC.png",
+            "ppu/m3_window_timing.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_window_timing_wx_0",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_window_timing_wx_0.asm",
+      "rom": "ppu/m3_window_timing_wx_0.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_window_timing_wx_0.dmg.png"],
+          "cgb": [
+            "ppu/m3_window_timing_wx_0.cgbC.png",
+            "ppu/m3_window_timing_wx_0.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_wx_4_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_wx_4_change.asm",
+      "rom": "ppu/m3_wx_4_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_wx_4_change.dmg.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_wx_4_change_sprites",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_wx_4_change_sprites.asm",
+      "rom": "ppu/m3_wx_4_change_sprites.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_wx_4_change_sprites.dmg.png"],
+          "cgb": [
+            "ppu/m3_wx_4_change_sprites.cgbC.png",
+            "ppu/m3_wx_4_change_sprites.cgbD.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_wx_5_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_wx_5_change.asm",
+      "rom": "ppu/m3_wx_5_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_wx_5_change.dmg.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/m3_wx_6_change",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/m3_wx_6_change.asm",
+      "rom": "ppu/m3_wx_6_change.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        },
+        "screenshot": {
+          "dmg": ["ppu/m3_wx_6_change.dmg.png"]
+        }
+      }
+    },
+    {
+      "name": "ppu/win_without_bg",
+      "source": "https://github.com/mattcurrie/mealybug-tearoom-tests/blob/master/src/ppu/win_without_bg.asm",
+      "rom": "ppu/win_without_bg.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 2
+      },
+      "success": {
+        "registers": {
+          "b": 3,
+          "c": 5,
+          "d": 8,
+          "e": 13,
+          "h": 21,
+          "l": 34
+        }
+      }
+    }
+  ]
+}

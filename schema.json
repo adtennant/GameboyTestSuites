@@ -1,0 +1,266 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "GameboyTestSuite",
+  "description": "A suite of test ROMs.",
+  "type": "object",
+  "definitions": {
+    "model": {
+      "oneOf": [
+        {
+          "const": "dmg",
+          "description": "Game Boy"
+        },
+        {
+          "const": "dmg0",
+          "description": "Game Boy, DMG-CPU 0"
+        },
+        {
+          "const": "dmgA",
+          "description": "Game Boy, DMG-CPU A"
+        },
+        {
+          "const": "dmgB",
+          "description": "Game Boy, DMG-CPU B"
+        },
+        {
+          "const": "dmgC",
+          "description": "Game Boy, DMG-CPU C"
+        },
+        {
+          "const": "mgb",
+          "description": "Game Boy Pocket"
+        },
+        {
+          "const": "cgb",
+          "description": "Game Boy Color"
+        },
+        {
+          "const": "cgb0",
+          "description": "Game Boy Color, CPU CGB 0"
+        },
+        {
+          "const": "cgbA",
+          "description": "Game Boy Color, CPU CGB A"
+        },
+        {
+          "const": "cgbB",
+          "description": "Game Boy Color, CPU CGB B"
+        },
+        {
+          "const": "cgbC",
+          "description": "Game Boy Color, CPU CGB C"
+        },
+        {
+          "const": "cgbD",
+          "description": "Game Boy Color, CPU CGB D"
+        },
+        {
+          "const": "cgbE",
+          "description": "Game Boy Color, CPU CGB E"
+        },
+
+        {
+          "const": "sgb",
+          "description": "Super Game Boy"
+        },
+        {
+          "const": "sgb2",
+          "description": "Super Game Boy 2"
+        }
+      ]
+    },
+    "screenshot": {
+      "description": "The path to a screenshot which matches the expected output of the test.",
+      "type": "string",
+      "pattern": "\\.png$"
+    },
+    "screenshots": {
+      "description": "An array of potential matching outputs on DMG models.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/screenshot"
+      }
+    }
+  },
+  "properties": {
+    "name": {
+      "description": "The name of the suite.",
+      "type": "string"
+    },
+    "url": {
+      "description": "The URL of the suite.",
+      "type": "string"
+    },
+    "tests": {
+      "description": "The tests which make up this suite.",
+      "type": "array",
+      "items": {
+        "description": "A single test.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "",
+            "type": "string"
+          },
+          "url": {
+            "description": "The URL of the test, if it differs from the URL of the suite.",
+            "type": "string"
+          },
+          "source": {
+            "description": "The URL of the source code for the test.",
+            "type": "string"
+          },
+          "rom": {
+            "description": "The path to the test ROM within the suite's folder.",
+            "type": "string"
+          },
+          "models": {
+            "description": "The models this test is expected to pass on. If this includes dmg or cgb then it is expected to pass on all DMG or CGB models, otherwise it will contain the specific models it is expected to pass on.",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/definitions/model"
+            }
+          },
+          "exit": {
+            "description": "The exit conditions for the test.",
+            "type": "object",
+            "properties": {
+              "opcode": {
+                "description": "The opcode which is executed to indicate the test is finished.",
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 255
+              },
+              "time": {
+                "description": "The amount of time (in seconds) which the test should take to complete.",
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          },
+          "success": {
+            "description": "The success conditions for the test.",
+            "type": "object",
+            "properties": {
+              "memory": {
+                "description": "The memory address and value which is expected if the test passed.",
+                "type": "object",
+                "properties": {
+                  "address": {
+                    "description": "The memory address.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 65536
+                  },
+                  "value": {
+                    "description": "The value which indicates success.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  }
+                }
+              },
+              "registers": {
+                "description": "The register values which are expected if the test passed.",
+                "type": "object",
+                "properties": {
+                  "b": {
+                    "description": "The value of the B register which indicates success.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "c": {
+                    "description": "The value of the C register which indicates success.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "d": {
+                    "description": "The value of the D register which indicates success.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "e": {
+                    "description": "The value of the E register which indicates success.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "h": {
+                    "description": "The value of the H register which indicates success.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  },
+                  "l": {
+                    "description": "The value of the L register which indicates success.",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 255
+                  }
+                }
+              },
+              "screenshot": {
+                "description": "The path to a single screenshot if the output is the same for all models, or an object if the output is different per-model.",
+                "oneOf": [
+                  {
+                    "description": "A screenshot which matches the output on all models.",
+                    "$ref": "#/definitions/screenshot"
+                  },
+                  {
+                    "description": "An array of screenshots which potentially match the output on all models.",
+                    "$ref": "#/definitions/screenshots"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "dmg": {
+                        "oneOf": [
+                          {
+                            "description": "A screenshot which matches the output on DMG models.",
+                            "$ref": "#/definitions/screenshot"
+                          },
+                          {
+                            "description": "An array of screenshots which potentially match the output on DMG models.",
+                            "$ref": "#/definitions/screenshots"
+                          }
+                        ]
+                      },
+                      "cgb": {
+                        "oneOf": [
+                          {
+                            "description": "A screenshot which matches the output on CGB models.",
+                            "$ref": "#/definitions/screenshot"
+                          },
+                          {
+                            "description": "An array of screenshots which potentially match the output on CGB models.",
+                            "$ref": "#/definitions/screenshots"
+                          }
+                        ]
+                      },
+                      "sgb": {
+                        "oneOf": [
+                          {
+                            "description": "A screenshot which matches the output on SGB models.",
+                            "$ref": "#/definitions/screenshot"
+                          },
+                          {
+                            "description": "An array of screenshots which potentially match the output on SGB models.",
+                            "$ref": "#/definitions/screenshots"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

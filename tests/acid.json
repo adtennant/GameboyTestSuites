@@ -1,0 +1,47 @@
+{
+  "name": "acid",
+  "tests": [
+    {
+      "name": "dmg-acid2",
+      "url": "https://github.com/mattcurrie/dmg-acid2",
+      "source": "https://github.com/mattcurrie/dmg-acid2/blob/master/src/dmg-acid2.asm",
+      "rom": "dmg-acid2.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 1.5
+      },
+      "success": {
+        "screenshot": "dmg-acid2.png"
+      }
+    },
+    {
+      "name": "cgb-acid2",
+      "url": "https://github.com/mattcurrie/cgb-acid2",
+      "source": "https://github.com/mattcurrie/cgb-acid2/blob/master/src/cgb-acid2.asm",
+      "rom": "cgb-acid2.gbc",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 1.5
+      },
+      "success": {
+        "screenshot": "cgb-acid2.png"
+      }
+    },
+    {
+      "name": "cgb-acid-hell",
+      "url": "https://github.com/mattcurrie/cgb-acid-hell",
+      "source": "https://github.com/mattcurrie/cgb-acid-hell/blob/main/cgb-acid-hell.asm",
+      "rom": "cgb-acid-hell.gbc",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 1.5
+      },
+      "success": {
+        "screenshot": "cgb-acid-hell.png"
+      }
+    }
+  ]
+}

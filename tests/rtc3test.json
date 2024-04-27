@@ -1,0 +1,48 @@
+{
+  "name": "rtc3test",
+  "url": "https://github.com/aaaaaa123456789/rtc3test",
+  "tests": [
+    {
+      "name": "basic",
+      "rom": "basic.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 13
+      },
+      "success": {
+        "screenshot": {
+          "dmg": "basic.dmg.png",
+          "cgb": "basic.cgb.png"
+        }
+      }
+    },
+    {
+      "name": "range",
+      "rom": "range.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 8
+      },
+      "success": {
+        "screenshot": {
+          "dmg": "basic.dmg.png",
+          "cgb": "basic.cgb.png"
+        }
+      }
+    },
+    {
+      "name": "sub-second",
+      "rom": "sub-second.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 26
+      },
+      "success": {
+        "screenshot": {
+          "dmg": "basic.dmg.png",
+          "cgb": "basic.cgb.png"
+        }
+      }
+    }
+  ]
+}

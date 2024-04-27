@@ -1,0 +1,629 @@
+{
+  "name": "blargg",
+  "url": "https://github.com/retrio/gb-test-roms",
+  "tests": [
+    {
+      "name": "cpu_instrs/01-special",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/01-special.s",
+      "rom": "cpu_instrs/01-special.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 3
+      },
+      "success": {
+        "screenshot": "cpu_instrs/01-special.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/02-interrupts",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/02-interrupts.s",
+      "rom": "cpu_instrs/02-interrupts.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "cpu_instrs/02-interrupts.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/03-op_sp,hl",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/03-op%20sp%2Chl.s",
+      "rom": "cpu_instrs/03-op_sp,hl.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2.5
+      },
+      "success": {
+        "screenshot": "cpu_instrs/03-op_sp,hl.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/04-op_r,imm",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/04-op%20r%2Cimm.s",
+      "rom": "cpu_instrs/04-op_r,imm.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2.5
+      },
+      "success": {
+        "screenshot": "cpu_instrs/04-op_r,imm.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/05-op_rp",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/05-op%20rp.s",
+      "rom": "cpu_instrs/05-op_rp.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 3
+      },
+      "success": {
+        "screenshot": "cpu_instrs/05-op_rp.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/06-ld_r,r",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/06-ld%20r%2Cr.s",
+      "rom": "cpu_instrs/06-ld_r,r.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "cpu_instrs/06-ld_r,r.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/07-jr,jp,call,ret,rst",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/07-jr%2Cjp%2Ccall%2Cret%2Crst.s",
+      "rom": "cpu_instrs/07-jr,jp,call,ret,rst.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "cpu_instrs/07-jr,jp,call,ret,rst.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/08-misc_instrs",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/08-misc%20instrs.s",
+      "rom": "cpu_instrs/08-misc_instrs.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "cpu_instrs/08-misc_instrs.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/09-op_r,r",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/09-op%20r%2Cr.s",
+      "rom": "cpu_instrs/09-op_r,r.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 7
+      },
+      "success": {
+        "screenshot": "cpu_instrs/09-op_r,r.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/10-bit_ops",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/10-bit%20ops.s",
+      "rom": "cpu_instrs/10-bit_ops.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 14
+      },
+      "success": {
+        "screenshot": "cpu_instrs/10-bit_ops.png"
+      }
+    },
+    {
+      "name": "cpu_instrs/11-op_a,(hl)",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cpu_instrs/source/11-op%20a%2C(hl).s",
+      "rom": "cpu_instrs/11-op_a,(hl).gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 13
+      },
+      "success": {
+        "screenshot": "cpu_instrs/11-op_a,(hl).png"
+      }
+    },
+    {
+      "name": "halt_bug",
+      "rom": "halt_bug.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "halt_bug.png"
+      }
+    },
+    {
+      "name": "instr_timing",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/instr_timing/source/instr_timing.s",
+      "rom": "instr_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "instr_timing.png"
+      }
+    },
+    {
+      "name": "interrupt_time",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/interrupt_time/interrupt_time.s",
+      "rom": "interrupt_time.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1.5
+      },
+      "success": {
+        "screenshot": "interrupt_time.png"
+      }
+    },
+    {
+      "name": "mem_timing/01-read_timing",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/mem_timing/source/01-read_timing.s",
+      "rom": "mem_timing/01-read_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "mem_timing/01-read_timing.png"
+      }
+    },
+    {
+      "name": "mem_timing/02-write_timing",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/mem_timing/source/02-write_timing.s",
+      "rom": "mem_timing/02-write_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "mem_timing/02-write_timing.png"
+      }
+    },
+    {
+      "name": "mem_timing/03-modify_timing",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/mem_timing/source/03-modify_timing.s",
+      "rom": "mem_timing/03-modify_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "mem_timing/03-modify_timing.png"
+      }
+    },
+    {
+      "name": "mem_timing-2/01-read_timing",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/mem_timing-2/source/01-read_timing.s",
+      "rom": "mem_timing-2/01-read_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "mem_timing-2/01-read_timing.png"
+      }
+    },
+    {
+      "name": "mem_timing-2/02-write_timing",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/mem_timing-2/source/02-write_timing.s",
+      "rom": "mem_timing-2/02-write_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "mem_timing-2/02-write_timing.png"
+      }
+    },
+    {
+      "name": "mem_timing-2/03-modify_timing",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/mem_timing-2/source/03-modify_timing.s",
+      "rom": "mem_timing-2/03-modify_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "mem_timing-2/03-modify_timing.png"
+      }
+    },
+    {
+      "name": "oam_bug/1-lcd_sync",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/oam_bug/source/1-lcd_sync.s",
+      "rom": "oam_bug/1-lcd_sync.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "oam_bug/1-lcd_sync.png"
+      }
+    },
+    {
+      "name": "oam_bug/2-causes",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/oam_bug/source/2-causes.s",
+      "rom": "oam_bug/2-causes.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "oam_bug/2-causes.png"
+      }
+    },
+    {
+      "name": "oam_bug/3-non_causes",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/oam_bug/source/3-non_causes.s",
+      "rom": "oam_bug/3-non_causes.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 3
+      },
+      "success": {
+        "screenshot": "oam_bug/3-non_causes.png"
+      }
+    },
+    {
+      "name": "oam_bug/4-scanline_timing",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/oam_bug/source/4-scanline_timing.s",
+      "rom": "oam_bug/4-scanline_timing.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1.5
+      },
+      "success": {
+        "screenshot": "oam_bug/4-scanline_timing.png"
+      }
+    },
+    {
+      "name": "oam_bug/5-timing_bug",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/oam_bug/source/5-timing_bug.s",
+      "rom": "oam_bug/5-timing_bug.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1.5
+      },
+      "success": {
+        "screenshot": "oam_bug/5-timing_bug.png"
+      }
+    },
+    {
+      "name": "oam_bug/6-timing_no_bug",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/oam_bug/source/6-timing_no_bug.s",
+      "rom": "oam_bug/6-timing_no_bug.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1.5
+      },
+      "success": {
+        "screenshot": "oam_bug/6-timing_no_bug.png"
+      }
+    },
+    {
+      "name": "oam_bug/7-timing_effect",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/oam_bug/source/7-timing_effect.s",
+      "rom": "oam_bug/7-timing_effect.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 8.5
+      },
+      "success": {
+        "screenshot": "oam_bug/7-timing_effect.png"
+      }
+    },
+    {
+      "name": "oam_bug/8-instr_effect",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/oam_bug/source/8-instr_effect.s",
+      "rom": "oam_bug/8-instr_effect.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1.5
+      },
+      "success": {
+        "screenshot": "oam_bug/8-instr_effect.png"
+      }
+    },
+    {
+      "name": "dmg_sound/01-registers",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/01-registers.s",
+      "rom": "dmg_sound/01-registers.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "dmg_sound/01-registers.png"
+      }
+    },
+    {
+      "name": "dmg_sound/02-len_ctr",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/02-len%20ctr.s",
+      "rom": "dmg_sound/02-len_ctr.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 11
+      },
+      "success": {
+        "screenshot": "dmg_sound/02-len_ctr.png"
+      }
+    },
+    {
+      "name": "dmg_sound/03-trigger",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/03-trigger.s",
+      "rom": "dmg_sound/03-trigger.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 18
+      },
+      "success": {
+        "screenshot": "dmg_sound/03-trigger.png"
+      }
+    },
+    {
+      "name": "dmg_sound/04-sweep",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/04-sweep.s",
+      "rom": "dmg_sound/04-sweep.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "dmg_sound/04-sweep.png"
+      }
+    },
+    {
+      "name": "dmg_sound/05-sweep_details",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/05-sweep%20details.s",
+      "rom": "dmg_sound/05-sweep_details.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "dmg_sound/05-sweep_details.png"
+      }
+    },
+    {
+      "name": "dmg_sound/06-overflow_on_trigger",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/06-overflow%20on%20trigger.s",
+      "rom": "dmg_sound/06-overflow_on_trigger.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "dmg_sound/06-overflow_on_trigger.png"
+      }
+    },
+    {
+      "name": "dmg_sound/07-len_sweep_period_sync",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/07-len%20sweep%20period%20sync.s",
+      "rom": "dmg_sound/07-len_sweep_period_sync.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "dmg_sound/07-len_sweep_period_sync.png"
+      }
+    },
+    {
+      "name": "dmg_sound/08-len_ctr_during_power",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/08-len%20ctr%20during%20power.s",
+      "rom": "dmg_sound/08-len_ctr_during_power.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "dmg_sound/08-len_ctr_during_power.png"
+      }
+    },
+    {
+      "name": "dmg_sound/09-wave_read_while_on",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/09-wave%20read%20while%20on.s",
+      "rom": "dmg_sound/09-wave_read_while_on.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "dmg_sound/09-wave_read_while_on.png"
+      }
+    },
+    {
+      "name": "dmg_sound/10-wave_trigger_while_on",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/10-wave%20trigger%20while%20on.s",
+      "rom": "dmg_sound/10-wave_trigger_while_on.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 5
+      },
+      "success": {
+        "screenshot": "dmg_sound/10-wave_trigger_while_on.png"
+      }
+    },
+    {
+      "name": "dmg_sound/11-regs_after_power",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/11-regs%20after%20power.s",
+      "rom": "dmg_sound/11-regs_after_power.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "dmg_sound/11-regs_after_power.png"
+      }
+    },
+    {
+      "name": "dmg_sound/12-wave_write_while_on",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/dmg_sound/source/12-wave%20write%20while%20on.s",
+      "rom": "dmg_sound/12-wave_write_while_on.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 5
+      },
+      "success": {
+        "screenshot": "dmg_sound/12-wave_write_while_on.png"
+      }
+    },
+    {
+      "name": "cgb_sound/01-registers",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/01-registers.s",
+      "rom": "cgb_sound/01-registers.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "cgb_sound/01-registers.png"
+      }
+    },
+    {
+      "name": "cgb_sound/02-len_ctr",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/02-len%20ctr.s",
+      "rom": "cgb_sound/02-len_ctr.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 11
+      },
+      "success": {
+        "screenshot": "cgb_sound/02-len_ctr.png"
+      }
+    },
+    {
+      "name": "cgb_sound/03-trigger",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/03-trigger.s",
+      "rom": "cgb_sound/03-trigger.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 18
+      },
+      "success": {
+        "screenshot": "cgb_sound/03-trigger.png"
+      }
+    },
+    {
+      "name": "cgb_sound/04-sweep",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/04-sweep.s",
+      "rom": "cgb_sound/04-sweep.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "cgb_sound/04-sweep.png"
+      }
+    },
+    {
+      "name": "cgb_sound/05-sweep_details",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/05-sweep%20details.s",
+      "rom": "cgb_sound/05-sweep_details.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "cgb_sound/05-sweep_details.png"
+      }
+    },
+    {
+      "name": "cgb_sound/06-overflow_on_trigger",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/06-overflow%20on%20trigger.s",
+      "rom": "cgb_sound/06-overflow_on_trigger.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "cgb_sound/06-overflow_on_trigger.png"
+      }
+    },
+    {
+      "name": "cgb_sound/07-len_sweep_period_sync",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/07-len%20sweep%20period%20sync.s",
+      "rom": "cgb_sound/07-len_sweep_period_sync.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "cgb_sound/07-len_sweep_period_sync.png"
+      }
+    },
+    {
+      "name": "cgb_sound/08-len_ctr_during_power",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/08-len%20ctr%20during%20power.s",
+      "rom": "cgb_sound/08-len_ctr_during_power.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 2
+      },
+      "success": {
+        "screenshot": "cgb_sound/08-len_ctr_during_power.png"
+      }
+    },
+    {
+      "name": "cgb_sound/09-wave_read_while_on",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/09-wave%20read%20while%20on.s",
+      "rom": "cgb_sound/09-wave_read_while_on.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "cgb_sound/09-wave_read_while_on.png"
+      }
+    },
+    {
+      "name": "cgb_sound/10-wave_trigger_while_on",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/10-wave%20trigger%20while%20on.s",
+      "rom": "cgb_sound/10-wave_trigger_while_on.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 5
+      },
+      "success": {
+        "screenshot": "cgb_sound/10-wave_trigger_while_on.png"
+      }
+    },
+    {
+      "name": "cgb_sound/11-regs_after_power",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/11-regs%20after%20power.s",
+      "rom": "cgb_sound/11-regs_after_power.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "cgb_sound/11-regs_after_power.png"
+      }
+    },
+    {
+      "name": "cgb_sound/12-wave",
+      "source": "https://github.com/retrio/gb-test-roms/blob/master/cgb_sound/source/12-wave.s",
+      "rom": "cgb_sound/12-wave.gb",
+      "models": ["cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 5
+      },
+      "success": {
+        "screenshot": "cgb_sound/12-wave.png"
+      }
+    }
+  ]
+}

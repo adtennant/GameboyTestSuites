@@ -1,0 +1,21 @@
+{
+  "name": "gameboytestsuite",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "format": "npx prettier . --write",
+    "prepare": "husky",
+    "validate": "node ./scripts/validate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}

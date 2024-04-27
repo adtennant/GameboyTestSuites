@@ -1,0 +1,105 @@
+{
+  "name": "Hacktix",
+  "url": "https://github.com/Hacktix",
+  "tests": [
+    {
+      "name": "BullyGB",
+      "url": "https://github.com/Hacktix/BullyGB",
+      "source": "https://github.com/Hacktix/BullyGB/tree/main/src/main.asm",
+      "rom": "bully.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": "bully.png"
+      }
+    },
+    {
+      "name": "strikethrough.gb",
+      "url": "https://github.com/Hacktix/strikethrough.gb",
+      "source": "https://github.com/Hacktix/strikethrough.gb/blob/main/src/main.asm",
+      "rom": "strikethrough.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1
+      },
+      "success": {
+        "screenshot": {
+          "dmg": "strikethrough.dmg.png",
+          "cgb": "strikethrough.cgb.png"
+        }
+      }
+    },
+    {
+      "name": "scribbltests/lycscx",
+      "url": "https://github.com/Hacktix/scribbltests",
+      "source": "https://github.com/Hacktix/scribbltests/blob/master/lycscx/src/lycscx.sm83",
+      "rom": "scribbltests/lycscx.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 1
+      },
+      "success": {
+        "screenshot": "scribbltests/lycscx.png"
+      }
+    },
+    {
+      "name": "scribbltests/lycscy",
+      "url": "https://github.com/Hacktix/scribbltests",
+      "source": "https://github.com/Hacktix/scribbltests/blob/master/lycscy/src/lycscx.sm83",
+      "rom": "scribbltests/lycscy.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 1
+      },
+      "success": {
+        "screenshot": "scribbltests/lycscy.png"
+      }
+    },
+    {
+      "name": "scribbltests/palettely",
+      "url": "https://github.com/Hacktix/scribbltests",
+      "source": "https://github.com/Hacktix/scribbltests/blob/master/palettely/src/lycscx.sm83",
+      "rom": "scribbltests/palettely.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 1
+      },
+      "success": {
+        "screenshot": "scribbltests/palettely.png"
+      }
+    },
+    {
+      "name": "scribbltests/scxly",
+      "url": "https://github.com/Hacktix/scribbltests",
+      "source": "https://github.com/Hacktix/scribbltests/blob/master/scxly/src/lycscx.sm83",
+      "rom": "scribbltests/scxly.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 1
+      },
+      "success": {
+        "screenshot": "scribbltests/scxly.png"
+      }
+    },
+    {
+      "name": "scribbltests/statcount",
+      "url": "https://github.com/Hacktix/scribbltests",
+      "source": "https://github.com/Hacktix/scribbltests/blob/master/statcount/src/lycscx.sm83",
+      "rom": "scribbltests/statcount.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "opcode": 64,
+        "time": 5
+      },
+      "success": {
+        "screenshot": "scribbltests/statcount.png"
+      }
+    }
+  ]
+}

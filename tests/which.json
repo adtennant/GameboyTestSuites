@@ -1,0 +1,16 @@
+{
+  "name": "which",
+  "url": "https://github.com/mattcurrie/which.gb",
+  "tests": [
+    {
+      "name": "which",
+      "url": "https://github.com/mattcurrie/which.gb",
+      "source": "https://github.com/mattcurrie/which.gb/blob/main/src/which.asm",
+      "rom": "which.gb",
+      "models": ["dmg", "mgb", "cgb", "sgb", "sgb2"],
+      "exit": {
+        "time": 1.5
+      }
+    }
+  ]
+}
