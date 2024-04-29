@@ -76,6 +76,7 @@
     "screenshots": {
       "description": "An array of potential matching outputs on DMG models.",
       "type": "array",
+      "minItems": 1,
       "items": {
         "$ref": "#/definitions/screenshot"
       }
@@ -136,7 +137,9 @@
                 "type": "number",
                 "minimum": 0
               }
-            }
+            },
+            "minProperties": 1,
+            "additionalProperties": false
           },
           "success": {
             "description": "The success conditions for the test.",
@@ -158,7 +161,8 @@
                     "minimum": 0,
                     "maximum": 255
                   }
-                }
+                },
+                "required": ["address", "value"]
               },
               "registers": {
                 "description": "The register values which are expected if the test passed.",
@@ -200,7 +204,8 @@
                     "minimum": 0,
                     "maximum": 255
                   }
-                }
+                },
+                "required": ["b", "c", "d", "e", "f", "h", "l"]
               },
               "screenshot": {
                 "description": "The path to a single screenshot if the output is the same for all models, or an object if the output is different per-model.",
@@ -264,14 +269,22 @@
                           }
                         ]
                       }
-                    }
+                    },
+                    "minProperties": 1,
+                    "additionalProperties": false
                   }
                 ]
               }
-            }
+            },
+            "minProperties": 1,
+            "additionalProperties": false
           }
-        }
+        },
+        "required": ["name", "rom", "exit", "success"],
+        "additionalProperties": false
       }
     }
-  }
+  },
+  "required": ["name", "tests"],
+  "additionalProperties": false
 }

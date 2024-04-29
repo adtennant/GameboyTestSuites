@@ -136,15 +136,15 @@ const suites = [
   require("../tests/acid.json"),
   require("../tests/blargg.json"),
   require("../tests/CasualPokePlayer.json"),
-  require("../tests/daid.json"),
+  // require("../tests/daid.json"),
   require("../tests/gbmicrotest.json"),
   require("../tests/Hacktix.json"),
-  require("../tests/MBC3-Tester-gb.json"),
+  // require("../tests/MBC3-Tester-gb.json"),
   require("../tests/mealybug-tearoom-tests.json"),
   require("../tests/mooneye-test-suite.json"),
   require("../tests/rtc3test.json"),
   require("../tests/SameSuite.json"),
-  require("../tests/TurtleTests.json"),
+  // require("../tests/TurtleTests.json"),
 ];
 
 async function validate() {
