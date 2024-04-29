@@ -58,7 +58,6 @@
           "const": "cgbE",
           "description": "Game Boy Color, CPU CGB E"
         },
-
         {
           "const": "sgb",
           "description": "Super Game Boy"
@@ -99,7 +98,7 @@
         "type": "object",
         "properties": {
           "name": {
-            "description": "",
+            "description": "The name of the test.",
             "type": "string"
           },
           "url": {
@@ -225,6 +224,18 @@
                           },
                           {
                             "description": "An array of screenshots which potentially match the output on DMG models.",
+                            "$ref": "#/definitions/screenshots"
+                          }
+                        ]
+                      },
+                      "mgb": {
+                        "oneOf": [
+                          {
+                            "description": "A screenshot which matches the output on MGB models.",
+                            "$ref": "#/definitions/screenshot"
+                          },
+                          {
+                            "description": "An array of screenshots which potentially match the output on MGB models.",
                             "$ref": "#/definitions/screenshots"
                           }
                         ]
